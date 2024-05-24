@@ -1,119 +1,207 @@
 body {
     font-family: sans-serif;
-    background-color: black;
 }
 
 header {
+    position: relative;
+    height: 100%;
+    top: 70px;
+    width: 100%;
+    background-color: #FFC700;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    margin-bottom: 20px;
 }
 
-.button {
-    background-color: #36bbce;
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 24px;
-    border-radius: 10px;
-    display: block;
+.logo {
+    width: 15%;
+    left: 88px;
+    top: 20%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
 }
 
 nav {
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-    padding: 25px 100px 25px 95px;
+    position: absolute;
+    width: 50%;
+    left: 358px;
+    top: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .nav-link {
-    font-size: 24px;
-    color: white;
     text-decoration: none;
-    display: block;
+    font-size: 20px;
+    color: #1E1E1E;
 }
 
-h1 {
-    text-align: center;
+.nav-link:first-child {
     color: white;
-    font-size: 36px;
-    margin-top: 45px;
-    margin-bottom: 40px;
 }
 
-.post-text {
-    font-size: 24px;
+.nav-link:hover:first-child{
+    color: #1E1E1E;
 }
 
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
+.nav-link:hover{
+    color: #FFFFFF;
+    transition: 0.2s ease-in;
 }
 
-.post {
-    background-color: white;
-    padding: 15px 45px 30px 45px;
-    width: 400px;
-    margin: 20px;
+
+
+footer{
     position: relative;
+    width: 100%;
+    top: 270px;
+    height: 425px;
+    left: 0px;
+    background: #FFC700;
 }
 
-.article-but {
-    text-decoration: none;
-    background-color: #133aac;
-    color: white;
+
+.footer-info{
+    position: absolute;
+    width: 30%;
+    left: 90px;
+    top: 10%;
+}
+
+h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.footer-info p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+
+    color: #575757;
+}
+.footer-img{
+    width: 70px;
+    height: 70px;
+    margin-right: 3%;
+}
+
+
+main {
+    position: relative;
+    width: 100%;
+    top: 100px;
+}
+
+.info{
+    position: relative;
+    width: 100%;
+    height: 528px;
+    left: 0px;
+    top: 50px;
+}
+
+.info-img{
+    position: absolute;
+    width: 30%;
+    left: 65%;
+}
+.info-div{
+    position: absolute;
+    left: 5%;
+    width: 50%;
+}
+.info-div h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 75px;
+    color: #575757;
+}
+.info-div p{
+    font-style: normal;
+    font-weight: 300;
     font-size: 24px;
-    text-align: center;
-    padding: 10px 75px 10px 75px;
-    display: block;
+    line-height: 28px;
+    color: #575757;
+    width: 90%;
 }
-
-.full-image {
-    margin: 100px 0px 100px 0px;
-}
-
-.social {
-    display: block;
-    width: 30px;
-}
-
-footer {
-    background-color: white;
+.info-butt{
+    width: 70%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    padding: 30px 30px 20px 45px;
+    flex-wrap: wrap;
 }
-
-.footer-text {
+.call-butt{
+    background: #FFC700;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 600;
     font-size: 24px;
-    margin-right: 30px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 3% 10%;
+    margin: 5% 5% 5% 0%;
+}
+.call-butt:hover{
+    background: #FFFFFF;
+    color: #FFC700;
+    border: 1px solid #FFC700;
+    transition: 0.2s ease-out;
+}
+.menu-butt{
+   background: #FFFFFF;
+    border: 1px solid #FFC700;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFC700;
+    padding: 3% 10%;
+    margin: 5% 5% 5% 0%;
+   
+}
+.menu-butt:hover{
+    background: #FFC700;
+    color: #FFFFFF;
+    transition: 0.2s ease-out;
 }
 
-.footer-text span {
-    color: #850AE5;
-    font-weight: bolder;
+
+.about{
+    position: relative;
+    width: 100%;
+    height: 777px;
+    left: 0px;
+}
+.about-div{
+    width: 100%;
+    height: 90%;
+    background-image: url(https://img.freepik.com/free-photo/top-view-delicious-food-with-copy-space_23-2150873986.jpg);
+    background-size: cover;  
+}
+.about-div p{
+    position: absolute;
+    width: 40%;
+    height: 273px;
+    left: 87px;
+    top: 187px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+
 }
 
-aside {
-    position: fixed;
-    right: 0;
-    top:230px;
-    background-color: #3c0470;
-    border-radius: 10px;
-    width: 100px;
-    height: 390px;
-    padding: 20px;
-}
 
-.computer::after {
-    content: url(https://lms.logikaschool.com/uploads/2021/03/tag-151102.svg);
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    }
